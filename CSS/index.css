@@ -1,0 +1,74 @@
+body {
+    background-color: blueviolet;
+}
+
+.cabecalho {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.tituloPrincipal {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: lightsalmon;
+}
+
+.principal {
+    margin: 1rem;
+}
+
+.tituloSecundario {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.entradas {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    background-color: #22C3F0;
+    border-radius: 20px;
+    border-color: #C3A9DA;
+    box-shadow: 3px 3px #C3A9DA;
+    height: 20px;
+    width: 75%;
+    margin: 0.5rem;
+    padding-left: 1rem;
+}
+
+.inputText {
+    font-size: 1.1rem;
+    color: black;
+    margin-top: 2rem;
+}
+
+.botoes {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botao {
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: #22C3F0;
+    border-color: #C3A9DA;
+    box-shadow: 3px 3px #C3A9DA;
+}
+
+.rodape {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
