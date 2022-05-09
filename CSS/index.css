@@ -1,6 +1,5 @@
 body {
     background-color: blueviolet;
-    min-height: 100vh;
 }
 
 .cabecalho {
@@ -17,7 +16,6 @@ body {
 
 .principal {
     margin: 1rem;
-    flex: 1;
 }
 
 .tituloSecundario {
@@ -66,4 +64,4 @@ body {
     background-color: #22C3F0;
     border-color: #C3A9DA;
     box-shadow: 3px 3px #C3A9DA;
-}gi
+}
