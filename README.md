@@ -16,3 +16,5 @@ Além de já informar a distancia entre cada lateral e divisão interna do móve
 Por consequência, a medida das preteleiras do móvel, caso tenha, também já é informada.
 
 Futuramento irei inserir mais funcionalidades e mais detalhes. Também quero criar um aplicativa no mesmo estilo.
+
+Não pretendo adicionar uma versão web no css do site. Como a função é unicamente a praticidade, ele foi feito exclusivamente para versões mobile.
