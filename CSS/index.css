@@ -1,10 +1,19 @@
 body {
     background-color: blueviolet;
+    font-family: 'Open-Sans', sans-serif;
+    position: relative;
 }
 
-.cabecalho {
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+main{
+    width: 350px;
+    margin: auto;
+}
+
+.cabecalho{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
 }
 
 .tituloPrincipal {
@@ -14,17 +23,13 @@ body {
     color: lightsalmon;
 }
 
-.principal {
-    margin: 1rem;
-}
-
-.tituloSecundario {
+/* .tituloSecundario{
     font-size: 1.1rem;
     color: black;
     margin-bottom: 1rem;
     padding: 0.2rem;
     text-align: center;
-}
+} */
 
 .entradas {
     margin: 1rem;
@@ -38,6 +43,7 @@ body {
     border-radius: 20px;
     border-color: #C3A9DA;
     box-shadow: 3px 3px #C3A9DA;
+    max-width: 300px;
     height: 20px;
     width: 75%;
     margin: 0.5rem;
@@ -51,10 +57,11 @@ body {
 }
 
 .botoes {
-    margin: 1.5rem;
+    width: 250px;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .botao {
