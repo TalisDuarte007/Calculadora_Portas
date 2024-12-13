@@ -1,18 +1,39 @@
-# Calculadora_Portas
-Calculadora que resolve problemas específicos para calcular medidas de portas em Fábrica de Móveis Planejados. 
+# Calculadora de Portas
 
-Um dos problemas na fabricação de móveis planejados sempre foi o cálculo para descobrir a medida da largura das portas, 
-junto com a distância entre cada lateral e divisão interna dos móveis.
+Calculadora que resolve problemas específicos para calcular medidas de portas em fábricas de móveis planejados.
 
-O cálculo nunca foi de nível altíssimo ou impossível. O problema é que isso sempre se tornava um cálculo demorado 
-e que obrigava os marceneiros a conferir todas as medidas.
+## 📋 Descrição
 
-Como calcular e conferir as medidas sempre consumia bons 15 ou 20 minutos da fabricação de cada móvel, essa calculadora otimiza este tempo para menos de 1 minuto.
-Basta calcular e recortas as peças.
+Este projeto ajuda marceneiros a calcular de forma rápida e precisa as medidas necessárias para a fabricação de portas em móveis planejados. Ele otimiza o tempo necessário para cálculos manuais, reduzindo erros e aumentando a eficiência.
 
-O funcionamento é simples, basta inserir a medida interna do móvel inteiro (em centimetros), e a quantidade de portas o móvel terá.
-Com isso, a calculadora soma a medida das portas para recorte. 
-Além de já informar a distancia entre cada lateral e divisão interna do móvel, facilitando também a montagem.
-Por consequência, a medida das preteleiras do móvel, caso tenha, também já é informada.
+### ⚙️ Funcionalidades
 
-Futuramento irei inserir mais funcionalidades e mais detalhes. Também quero criar um aplicativa no mesmo estilo.
+- **Cálculo de medidas**: Determina as larguras das portas e distâncias entre laterais.
+- **Automação do processo**: Tempo reduzido para menos de 1 minuto.
+- **Fácil utilização**: Insira as dimensões do móvel e o número de portas, e receba as medidas prontas para corte e montagem.
+
+### 🚀 Futuro
+
+- Mais funcionalidades, como suporte a outros tipos de móveis.
+- Planejamento para desenvolvimento de um aplicativo.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**: Estrutura do projeto.
+- **CSS3**: Estilização moderna e responsiva.
+- **JavaScript**: Lógica e cálculos.
+
+## 📂 Estrutura do Projeto
+
+```plaintext
+Calculadora_Portas/
+│
+├── CSS/
+│   └── style.css       # Estilos principais do projeto
+|   |__ reset.css       # Reset de CSS do projeto.
+│
+├── js/
+│   └── script.js       # Código JavaScript modularizado
+│
+├── index.html          # Página principal
+└── README.md           # Documentação
