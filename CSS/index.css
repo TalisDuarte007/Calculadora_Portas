@@ -1,74 +1,152 @@
-body {
-    background-color: blueviolet;
-    font-family: 'Open-Sans', sans-serif;
-    position: relative;
-}
+/* CSS/index.css */
 
-main{
-    width: 350px;
-    margin: auto;
-}
-
-.cabecalho{
-    align-items: center;
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f4f4f9;
+    --border-radius: 5px;
+    --padding: 10px;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
-    margin-top: 3em;
-}
-
-.tituloPrincipal {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: lightsalmon;
-}
-
-/* .tituloSecundario{
-    font-size: 1.1rem;
-    color: black;
-    margin-bottom: 1rem;
-    padding: 0.2rem;
-    text-align: center;
-} */
-
-.entradas {
-    margin: 1rem;
+  }
+  
+  .container {
+    flex: 1;
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.input {
-    background-color: #22C3F0;
-    border-radius: 20px;
-    border-color: #C3A9DA;
-    box-shadow: 3px 3px #C3A9DA;
-    max-width: 300px;
-    height: 20px;
-    width: 75%;
-    margin: 0.5rem;
-    padding-left: 1rem;
-}
-
-.inputText {
-    font-size: 1.1rem;
-    color: black;
-    margin-top: 2rem;
-}
-
-.botoes {
-    width: 250px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-}
+  }
+  
+  header {
+    text-align: center;
+    padding: var(--padding);
+  }
+  
+  header h1 {
+    margin-top: 50px;
+    color: var(--primary-color);
+    font-size: 2rem;
+  }
 
-.botao {
-    height: 40px;
-    width: 120px;
-    border-radius: 30px;
-    background-color: #22C3F0;
-    border-color: #C3A9DA;
-    box-shadow: 3px 3px #C3A9DA;
-}
+  main{
+    padding: 0 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input,
+  form button {
+    padding: var(--padding);
+    font-size: 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .radio-group p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  
+  .radio-group input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .radio-group input[type="radio"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .radio-group input[type="radio"]:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--background-color);
+  }
+  
+  form button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  #resultados {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #resultados p {
+    margin: 0 0 10px;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--padding);
+    margin-top: auto;
+    width: 100%;
+  }
+  

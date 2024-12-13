@@ -1,42 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="/CSS/reset.css">
-    <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="https://talisduarte007.github.io/Calculadora_Portas/CSS/reset.css">
-    <link rel="stylesheet" href="https://talisduarte007.github.io/Calculadora_Portas/CSS/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculadora para medir portas em móveis planejados.">
+  <title>Calculadora de Portas</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/reset.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="tituloPrincipal">
-            Calculadora de Portas
-        </h1>
+  <div class="container">
+    <header>
+      <h1>Calculadora de Portas</h1>
     </header>
     <main>
-        <div class="principal">
-            <div class="entradas">
-                <label for="inputNumber" class="inputText">Qual o tamanho interno do móvel (cm):</label>
-                <input type="number" name="inputNumber" id="inputNumber" class="input inputMedidaInterna" required placeholder="123,5">
-                <label for="inputQuantidade" class="inputText">Quantas portas o móvel tem?</label>
-                <input type="number" name="inputQuantidade" id="inputQuantidade" class="input inputQuantidadePortas" required placeholder="3">    
-            </div>
-            
-            <div class="botoes">
-                <button class="botao" onclick="embutida()">Embutidas</button>
-                <button class="botao" onclick="nEmbutida()">Não Embutidas</button>
-            </div>
+      <form id="form-calculadora">
+        <label for="largura">Largura total do móvel (cm):</label>
+        <input type="number" id="largura" required>
 
-            <div class="resultado resultadoPortas"></div>
-            <div class="resultado resultadoVaos"></div>
-            
+        <label for="numPortas">Número de portas:</label>
+        <input type="number" id="numPortas" required>
+
+        <div class="radio-group">
+          <p>Tipo de porta:</p>
+          <label>
+            <input type="radio" name="tipoPorta" value="embutida" required>
+            Embutida
+          </label>
+          <label>
+            <input type="radio" name="tipoPorta" value="naoEmbutida" required>
+            Não Embutida
+          </label>
         </div>
+
+        <button type="submit">Calcular</button>
+      </form>
+      <div id="resultados"></div>
     </main>
-    
-    <script src="js/main.js"></script>
-    <script src="https://github.com/TalisDuarte007/Calculadora_Portas/blob/main/js/main.js"></script>
+    <footer>
+      <p>Calculadora de Portas © 2024</p>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
